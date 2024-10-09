@@ -7,10 +7,15 @@
   <title>Veronica Galeazzo - Programmatrice e Web Designer</title>
   <link rel="stylesheet" href="output.css">
  <style>
+    body {
+     text-transform: none;
+    }
     /* Custom Tailwind styles */
     .hero {
-      background-color: #f4c8f9;
+      background-color: #09090b;
       height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
     .badge {
       background-color: #1e40af;
@@ -19,7 +24,33 @@
     a:hover {
       color: #D270E3 !important; /* Usa un colore che funziona correttamente */
     }
-  
+
+    /* Optional: Pause animation on hover */
+    .scritte span:hover {
+      animation: changeColor 2s infinite ease-in-out; 
+    
+           
+    }
+    @keyframes changeColor {
+      0% { color: #e87240 ; }
+      25% { color:  #f37c2d;}
+      50% { color: #e64180 ; }
+      75% { color:  #9039a0; }
+      100% { color: #D270E3 ; }
+    }
+    .scritte {
+      width: 100%;
+      display: flex;      
+      font-size: 3rem; /* Adjust font size */
+      font-weight: bold;
+      color: antiquewhite;
+      opacity: 20%;
+      text-transform: uppercase;
+      
+    }
+    .scritte span {
+      padding-right: 2rem;
+    }    
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -34,30 +65,70 @@
     <div class="container mx-auto px-4 py-2.5">
       <div class="flex justify-between items-center h-16">
         <!-- Logo a sinistra -->
-        <div class="text-2xl font-bold text-gray-100">
-          <img src="https://raw.githubusercontent.com/verongale/galeazzoveronica/refs/heads/main/immagini/Veronica_logo.png" alt="Logo di Veronica" width="100" height="100">
+        <div>
+          <img src="https://raw.githubusercontent.com/verongale/galeazzoveronica/refs/heads/main/docs/immagini/veronica_logo.png" alt="Logo di Veronica" width="150" >
         </div>
         <!-- Voci della navbar a destra -->
-        <ul class="flex space-x-4 ml-auto">
-          <li><a href="#about" class="text-gray-100 hover:text-rose-600 ">Chi sono</a></li>
-          <li><a href="#education" class="text-gray-100 hover:text-rose-600">Formazione</a></li>
-          <li><a href="#skills" class="text-gray-100 hover:text-rose-600">Competenze</a></li>
-          <li><a href="#contact" class="text-gray-100 hover:text-rose-600">Contatti</a></li>
+        <ul class="flex text-xl space-x-4 ml-auto">
+          <li><a href="#about" class="text-gray-100  ">Chi sono</a></li>
+          <li><a href="#education" class="text-gray-100 ">Formazione</a></li>
+          <li><a href="#skills" class="text-gray-100 ">Competenze</a></li>
+          <li><a href="#contact" class="text-gray-100 ">Contatti</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-  <section class="hero text-black py-20 text-center">
-    <div class="container mx-auto ">
-      <h1 class="text-5xl font-bold">Veronica Galeazzo</h1>
-      <p class="text-xl mt-4">Programmatrice e Web Designer</p>
-      <a href="#contact" class="mt-8 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100">Contattami</a>
+ <!-- Parole di sfondo -->
+  <section class="hero text-black text-center">
+   <div class="sfondo">
+
+
+    <p class="scritte ">
+        <span>Creative.</span> <span>Designer.</span> <span>Coder. </span><span>Developer. </span><span>Illustrator.</span>
+        <span>Creative. </span><span>Designer. </span><span>Coder. </span><span>Developer.</span><span> Illustrator.</span>
+    </p>
+    <p class="scritte ">
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>  
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>
+    </p>
+    <p class="scritte ">
+      <span>Developer.</span> <span>Coder. </span> <span>Illustrator.</span> <span>Creative.</span> <span>Designer.</span>
+      <span>Developer.</span> <span>Coder. </span> <span>Illustrator.</span> <span>Creative.</span> <span>Designer.</span>
+        
+    </p>   
+    <p class="scritte ">
+        <span>Creative.</span> <span>Designer.</span> <span>Coder. </span><span>Developer. </span><span>Illustrator.</span>
+        <span>Creative. </span><span>Designer. </span><span>Coder. </span><span>Developer.</span><span> Illustrator.</span>
+    </p>
+    <p class="scritte ">
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>  
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>
+    </p>
+    <p class="scritte ">
+      <span>Developer.</span> <span>Coder. </span> <span>Illustrator.</span> <span>Creative.</span> <span>Designer.</span>
+      <span>Developer.</span> <span>Coder. </span> <span>Illustrator.</span> <span>Creative.</span> <span>Designer.</span>
+        
+    </p>   
+    <p class="scritte ">
+        <span>Creative.</span> <span>Designer.</span> <span>Coder. </span><span>Developer. </span><span>Illustrator.</span>
+        <span>Creative. </span><span>Designer. </span><span>Coder. </span><span>Developer.</span><span> Illustrator.</span>
+    </p>
+    <p class="scritte ">
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>  
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>
+    </p>
+     <p class="scritte ">
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>  
+        <span>Designer.</span> <span>Developer.</span> <span>Creative.</span> <span>Illustrator.</span> <span>Coder.</span>
+   
+      </div>
+       
     </div>
   </section>
   
-  </div>
+  
 
   <!-- Informazioni -->
   <section class="container mx-auto mt-12 px-4">
