@@ -799,3 +799,215 @@ video {
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
+
+
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-container {
+        gap: 0;
+    }
+
+
+    body {
+     text-transform: none;     
+    }
+    
+   
+    .menu-icon {
+      position: relative;
+    }
+
+    .menu {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 10%;
+      left: 0;
+      z-index: 3;
+      background-color:#09090b;   
+       
+    }
+
+    .menu ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: capitalize;
+      padding: 2rem;
+      font-weight: bold;
+      font-size: 3.75rem;
+       
+    }
+
+    .menu ul li {
+      padding: 2rem;
+
+    }
+    .menu ul li:nth-child(1) {
+    color: #f2cf44; /* Primo colore */
+    }
+
+    .menu ul li:nth-child(2) {
+    color: #e87240; /* Primo colore */
+    }
+
+    .menu ul li:nth-child(3) {
+    color: #e64180 ; /* Primo colore */
+    }
+
+    .menu ul li:nth-child(4) {
+    color: #D270E3; /* Primo colore */
+    }
+    
+    .menu-icon:hover {
+      cursor: pointer;
+      
+    }
+    .menu-icon-top {
+      background-color: #e87240 ;
+      width: 3rem;
+      height: 0.3rem;
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+    
+    .menu-icon-middle {
+      background-color: #e64180;
+      width: 3rem;
+      height: 0.3rem;
+      padding-bottom: 0px;
+      padding-right: 0;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .menu-icon-bottom {
+      background-color: #9039a0 ;
+      width: 3rem;
+        height: 0.3rem;
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+
+    .menu-icon.open .menu-icon-top {
+      transform: rotate(45deg) translate(19px, 12px);
+    }
+
+    .menu-icon.open .menu-icon-middle {
+      opacity: 0;
+    }
+
+    .menu-icon.open .menu-icon-bottom {
+       transform: rotate(-45deg) translate(9px, -1px);
+    }   
+
+    /* Custom Tailwind styles */
+    .hero {
+      background-color: #09090b;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+
+    .folle {
+      position: absolute;
+      margin-right: 25%;
+      margin-left: 25%;
+      z-index: 2;
+    }
+    
+    a:hover {
+      color: #eadbed !important; /* Usa un colore che funziona correttamente */
+    }
+
+    /* Optional: Pause animation on hover */
+    .scritte span:hover {
+      animation: changeColor 2s infinite ease-in-out;
+      cursor: default;    
+    }
+    @keyframes changeColor {
+      0% { color: #e87240 ; }
+      25% { color:  #f37c2d;}
+      50% { color: #e64180 ; }
+      75% { color:  #9039a0; }
+      100% { color: #D270E3 ; }
+    }
+    .scritte {
+      width: 100%;
+      display: flex;      
+      font-size: 3rem; /* Adjust font size */
+      font-weight: bold;
+      color: antiquewhite;
+      opacity: 35%;
+      text-transform: uppercase;
+      cursor: default;    
+      margin: 0;
+      
+    }
+    .scritte span {
+      padding-right: 2rem;
+      cursor: default;
+    }  
+
+    .aboutpage {
+      background-color:#eadbed ;
+      height: 90vh;
+      margin: 0;
+    }
+    
+   
+    .aboutpage.dark-mode {
+    background-color: #09090b ; /* Colore di sfondo scuro */
+    color: white; /* Colore del testo chiaro */
+    }
+
+    .containerAbout {
+      margin-left: 25%;
+      margin-right: 25%;
+    
+    }
+
+    .titolo {
+                 
+      display: flex;
+      justify-content: center;  
+      text-transform: uppercase; 
+      font-weight: bold;
+      font-size: 5rem;
+      padding-top: 5%;
+      
+    }
+
+    .fotoEtesto {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menuEicone {
+      align-items: center;
+    }
+
+    .dlmode {
+      padding-left: 2rem;
+      color: #f2cf44;
+    }
+
+    #sole {
+      display: none;
+    }
+
+    #luna {
+      display: block;
+    }
+
+    
