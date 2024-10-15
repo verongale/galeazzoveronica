@@ -10,17 +10,18 @@
  
   <script src="script.js"></script>
 </head>
-<body class="bg-zinc-950">  
+<body>  
     
   <div class="navbar">     
     <nav class="bg-zinc-950 shadow">
       <div class="container mx-auto px-4 py-2.5">
         <div class="flex justify-between items-center h-16">
           <!-- Logo a sinistra -->
-          <div>
+          <a href="index.html">
+          <div class="Logo">
             <img src="https://raw.githubusercontent.com/verongale/galeazzoveronica/refs/heads/main/docs/immagini/veronica_logo.png" alt="Logo di Veronica" width="150" >
           </div>
-
+          </a>
        
          <div class="menuEicone flex">
             <div class="menu-icon">  
@@ -44,7 +45,7 @@
           <div class="menu">
               <ul class="bg-zinc-950 text-5xl space-y-4 ml-auto">
                 <li><a href="about.html" class="text-rose-500">Chi sono</a></li>
-                <li><a href="#education" class="text-rose-500 ">Formazione</a></li>
+                <li><a href="formazione.html" class="text-rose-500 ">Formazione</a></li>
                 <li><a href="#skills" class="text-rose-500 ">Competenze</a></li>
                 <li><a href="#contact" class="text-rose-500 ">Contatti</a></li>
               </ul>
@@ -59,32 +60,90 @@
         <div class="containerAbout"> 
             <h1 class="titolo"> About Me </h1>
             <div class="fotoEtesto flex">
-                <div class="foto">
-                    <img src="galeazzoveronica\docs\immagini\FotoCV_tonda.png" alt="Foto bellissima di Veronica" width="150" >
-                </div>
+              
                 <div class="text-xl text-center">
                     <p>Ciao!
-                    Sono Veronica, una giovane appassionata di programmazione e web design. 
+                    Sono Veronica, una giovane appassionata di <span class="evidenziato-a">programmazione</span> e <span class="evidenziato-b"> design </span>. 
                     Ho sempre studiato arte e grafica, e il mio amore per il mondo creativo si riflette in ogni progetto che realizzo. 
-                    Sono una vera nerd: oltre a sviluppare siti web, mi dedico anche all’illustrazione, creando opere che uniscono la tecnologia e l’arte.
+                    Sono una vera nerd: oltre a sviluppare siti web, mi dedico anche allo studio delle <span class="evidenziato-c">lingue straniere</span> e dell’<span class="evidenziato-d">illustrazione digitale</span>, alla lettura e ai videogiochi.
                     </p>
                     <br>
                     <p>
-                    Ho avuto l’opportunità di vivere per tre anni negli Stati Uniti, un'esperienza che ha arricchito la mia visione del mondo e mi ha ispirato a esplorare nuove forme di espressione creativa. 
+                    Ho avuto l’opportunità di vivere per tre anni negli <span class="evidenziato-a">Stati Uniti</span>, un'esperienza che ha arricchito la mia visione del mondo e mi ha ispirato a esplorare nuove forme di <span class="evidenziato-b">espressione creativa</span>. 
                     Ogni progetto è un passo nel mio viaggio, e sono sempre entusiasta di affrontare nuove sfide che mi permettano di imparare e crescere.
                     </p>
                     <br>
                     <p>   
-                    Se hai un'idea o un progetto in mente, non esitare a contattarmi! Sarei felice di collaborare e scoprire insieme cosa possiamo realizzare.
+                    Se hai un'idea o un progetto in mente, non esitare a contattarmi! Sarei felice di <span class="evidenziato-c">collaborare</span> e scoprire insieme cosa possiamo realizzare.
                     </p>        
                 </div>
             </div>
-        </div>
+              <div class="carousel">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                  <div class="carousel-images">
+
+                    <img src="C:\Users\galea\Desktop\Desktop\Programmazione\CV\galeazzoveronica\docs\immagini\nyc.jpg" alt="fotografia nyc" width="150"class="carousel-item"> 
+                    <img src="C:\Users\galea\Desktop\Desktop\Programmazione\CV\galeazzoveronica\docs\immagini\wmarch.jpg" width="150"class="carousel-item"> 
+                    <img src="C:\Users\galea\Desktop\Desktop\Programmazione\CV\galeazzoveronica\docs\immagini\mural.jpeg" alt="fotografia nyc" width="150"class="carousel-item"> 
+                    <img src="C:\Users\galea\Desktop\Desktop\Programmazione\CV\galeazzoveronica\docs\immagini\waterfall.jpeg" alt="fotografia nyc" width="150" class="carousel-item"> 
+                    <img src="C:\Users\galea\Desktop\Desktop\Programmazione\CV\galeazzoveronica\docs\immagini\pride.jpeg" alt="fotografia nyc" width="150" class="carousel-item"> 
+                  
+                    
+                  </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+              </div>
+
+              <div class="anteprimaskills">
+                <div class="text-xl text-center">
+
+                      <p>
+                        Grazie al mio percorso di studi e professionale ho avuto modo di confrontarmi con diverse realtà e questi sono alcuni dei linguaggi, strumenti e settori di cui ho potuto fare esperienza: 
+                      </p>
+                      <br>
+                      <p class="skillsbubble">
+                      <span class="evidenziato-a">HTML5</span> <span class="evidenziato-b">CSS3</span> <span class="evidenziato-c">Javascript</span> <span class="evidenziato-d">PHP</span> <span class="evidenziato-a">Bootstrap</span> <span class="evidenziato-b">Tailwind</span> <span class="evidenziato-c">Mysql</span> 
+                      <span class="evidenziato-d">Adobe Photoshop</span> 
+                      <span class="evidenziato-a">Adobe Illustrator</span> <span class="evidenziato-b">Krita</span> <span class="evidenziato-c">Figma</span>
+                        <span class="evidenziato-d">Wordpress</span> <span class="evidenziato-a">Search Engine Optimization</span> 
+                      <span class="evidenziato-b">Adobe Premiere</span>
+                      </p>
+                      <br>
+                      <p>
+                      E alcuni argomenti che sto attivamente approfondendo o approcciando per arricchire le mie conoscenze: 
+                      </p>
+                      <br>
+                      <p class="skillsbubble">
+                        <span class="evidenziato-c">Hubspot CMS</span> <span class="evidenziato-d">Hubspot marketing hub</span> <span class="evidenziato-a">Google Analytics</span> 
+                        <span class="evidenziato-b">C#</span> <span class="evidenziato-c">UX/UI</span> 
+                      </p>
+                      
+              
+                </div>
+
+              </div>
+              <div class="containergioco">
+                <h2 class="giocotitolo text-center">Scopri qualcosa di inaspettato su di me</h2>
+                <h3 class="gioco text-xl text-center">Vuoi conoscermi meglio? <br> Scopri  <span class="evidenziato-a">due verità</span> su di me... e <span class="evidenziato-d">una bugia!</span></h3>
+                <p class="text-xl text-center">Ti va di giocare? Ecco tre fatti su di me. Due sono veri, uno no. Riuscirai a battermi e scoprire qual è la bugia?</p>
+                <ul id="statements" class="text-xl text-center">
+              <!-- Le affermazioni verranno generate qui -->
+                </ul>
+                <button id="check-btn" class="evidenziato-d text-xl text-center">Controlla la risposta</button>
+                  <div id="result" class="hidden text-xl text-center""></div>
+              </div>
+            </div>        
+          </div>
+     
+               
     </div>
 
 
 
 
-
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2024 Veronica Galeazzo. All rights reserved.</p>
+      </div>
+</footer>
 </body>
 </html>
